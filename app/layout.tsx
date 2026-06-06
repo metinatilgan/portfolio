@@ -6,6 +6,7 @@ const SITE_URL = "https://metinatilgan.github.io/portfolio";
 const TITLE = "Metin Atılgan — Portfolio & CV";
 const DESCRIPTION =
   "Adli bilişim, dijital davranış analizi, psikoloji ve yapay zekâ destekli sistemler üzerine çalışan multidisipliner bir araştırmacı ve geliştirici.";
+const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
 export const metadata: Metadata = {
   title: {
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     images: [
       {
-        url: "/og-image.jpg",
+        url: OG_IMAGE,
         width: 1200,
         height: 630,
         alt: "Metin Atılgan — Portfolio & CV",
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/og-image.jpg"],
+    images: [OG_IMAGE],
   },
   robots: {
     index: true,
