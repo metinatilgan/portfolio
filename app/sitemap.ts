@@ -1,5 +1,7 @@
 import { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 const SITE_URL = "https://metinatilgan.github.io/portfolio";
 
 export default function sitemap(): MetadataRoute.Sitemap {
