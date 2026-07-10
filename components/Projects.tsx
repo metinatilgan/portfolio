@@ -186,7 +186,14 @@ function PsikoPlannerShowcase({ status }: { status?: string }) {
       <div className="psiko-orbit psiko-orbit-two" />
 
       <div className="psiko-icon-tile">
-        <img className="project-icon-image" src={withBase("/project-icons/psikoplanner.png")} alt="" />
+        <img
+          className="project-icon-image"
+          src={withBase("/project-icons/psikoplanner.png")}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
+        />
       </div>
 
       <div className="psiko-device psiko-device-home">
@@ -354,7 +361,14 @@ function TaskAgentShowcase({ status }: { status?: string }) {
       <div className="taskagent-axis taskagent-axis-two" />
 
       <div className="taskagent-icon-card">
-        <img className="project-icon-image" src={withBase("/project-icons/taskagent.png")} alt="" />
+        <img
+          className="project-icon-image"
+          src={withBase("/project-icons/taskagent.png")}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
+        />
       </div>
 
       <div className="taskagent-device taskagent-device-focus">
@@ -547,7 +561,14 @@ function ForumAnneShowcase({ status }: { status?: string }) {
       <div className="forumanne-orbit forumanne-orbit-two" />
 
       <div className="forumanne-logo-tile">
-        <img className="project-icon-image" src={withBase("/project-icons/forumanne.svg")} alt="" />
+        <img
+          className="project-icon-image"
+          src={withBase("/project-icons/forumanne.svg")}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
+        />
       </div>
 
       <div className="forumanne-browser forumanne-browser-main">
@@ -670,7 +691,14 @@ function FamilyShieldShowcase({ status }: { status?: string }) {
       <div className="familyshield-orbit familyshield-orbit-two" />
 
       <div className="familyshield-icon-tile">
-        <img className="project-icon-image" src={withBase("/familyshield/icon.png")} alt="" />
+        <img
+          className="project-icon-image"
+          src={withBase("/familyshield/icon.png")}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchPriority="low"
+        />
       </div>
 
       <div className="familyshield-device familyshield-device-home">
@@ -698,7 +726,14 @@ function FamilyShieldPhoto({ src }: { src: string }) {
   return (
     <div className="familyshield-phone-shell">
       <div className="familyshield-phone-notch" />
-      <img className="familyshield-phone-photo" src={src} alt="" />
+      <img
+        className="familyshield-phone-photo"
+        src={src}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
+      />
     </div>
   );
 }

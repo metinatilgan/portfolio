@@ -34,6 +34,9 @@ export default function About() {
                 <img
                   src={withBase("/profile.jpg")}
                   alt={t.about.photoLabel}
+                  loading="lazy"
+                  decoding="async"
+                  fetchPriority="low"
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent" />

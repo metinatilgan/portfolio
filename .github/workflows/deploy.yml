@@ -35,6 +35,9 @@ jobs:
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
+      - name: Remove custom domain config
+        run: rm -f out/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
